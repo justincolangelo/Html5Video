@@ -16,6 +16,7 @@ import android.content.res.AssetFileDescriptor;
 import android.content.res.Resources.NotFoundException;
 import android.os.Build;
 import android.util.Log;
+import android.view.View;
 
 public class Html5Video extends CordovaPlugin {
 	private static final String TAG = "Html5VideoCordovaPlugin";
