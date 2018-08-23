@@ -74,6 +74,7 @@ public class Html5Video extends CordovaPlugin {
 			if (videoId != null) {
 				cordova.getActivity().runOnUiThread(new Runnable() {
 				     public void run() {
+						   webView.setLayerType(View.LAYER_TYPE_HARDWARE, null);
 				           webView.loadUrl("javascript:window.plugins.html5Video._play(" + videoId + ")");
 				     }
 				});
